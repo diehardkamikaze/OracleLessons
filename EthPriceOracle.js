@@ -71,13 +71,22 @@ async function processRequest (oracleContract, ownerAddress, id, callerAddress) 
 }
 
 async function setLatestEthPrice (oracleContract, callerAddress, ownerAddress, ethPrice, id) {
-  ethPrice = ethPrice.replace('.', '');
+  ethPrice = ethPrice.replace('.', '')
+  const multiplier = new BN(10**10, 10)
   const ethPriceInt = (new BN(parseInt(ethPrice), 10)).mul(multiplier)
   const idInt = new BN(parseInt(id))
   try {
     await oracleContract.methods.setLatestEthPrice(ethPriceInt.toString(), callerAddress, idInt.toString()).send({ from: ownerAddress })
   } catch (error) {
     console.log('Error encountered while calling setLatestEthPrice.')
-    // Do some error handling
+ 
   }
 }
+
+async function init () {
+  const { ownerAddress, web3js, client } = common.loadAccount(PRIVATE_KEY_FILE_NAME)
+  const oracleContract = await getOracleContract(web3js)
+  filterEvents(oracleContract, web3js)
+  return { oracleContract, ownerAddress, client }
+}
+
