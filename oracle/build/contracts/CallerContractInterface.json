@@ -22,15 +22,15 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_ethPrice\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"}],\"name\":\"callback\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/Users/diehard/Downloads/EthPriceOracle/oracle/contracts/CallerContractInterface.sol\":\"CallerContractInterface\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/diehard/Downloads/EthPriceOracle/oracle/contracts/CallerContractInterface.sol\":{\"keccak256\":\"0x04ae75e2a38fccc840127da06dc9ed734f34657eadbded1c920ce47fff7fa62d\",\"urls\":[\"bzz-raw://1fe6452384c76cd78c75a9e9a07db69ae89f74ef55aff138f5abfd169931ccc4\",\"dweb:/ipfs/QmSeMkiTA2VL4L542nGvHyissyMPeXjyH7mbWox7h8Ce5q\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_ethPrice\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"}],\"name\":\"callback\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/mnt/c/Users/diehard/Downloads/EthPriceOracle/oracle/contracts/CallerContractInterface.sol\":\"CallerContractInterface\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/mnt/c/Users/diehard/Downloads/EthPriceOracle/oracle/contracts/CallerContractInterface.sol\":{\"keccak256\":\"0x04ae75e2a38fccc840127da06dc9ed734f34657eadbded1c920ce47fff7fa62d\",\"urls\":[\"bzz-raw://1fe6452384c76cd78c75a9e9a07db69ae89f74ef55aff138f5abfd169931ccc4\",\"dweb:/ipfs/QmSeMkiTA2VL4L542nGvHyissyMPeXjyH7mbWox7h8Ce5q\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "sourceMap": "",
   "deployedSourceMap": "",
   "source": "pragma solidity >=0.4.22 <0.9.0;\r\ncontract CallerContractInterface {\r\n  function callback(uint256 _ethPrice, uint256 id) public;\r\n}\r\n",
-  "sourcePath": "C:\\Users\\diehard\\Downloads\\EthPriceOracle\\oracle\\contracts\\CallerContractInterface.sol",
+  "sourcePath": "/mnt/c/Users/diehard/Downloads/EthPriceOracle/oracle/contracts/CallerContractInterface.sol",
   "ast": {
-    "absolutePath": "/C/Users/diehard/Downloads/EthPriceOracle/oracle/contracts/CallerContractInterface.sol",
+    "absolutePath": "/mnt/c/Users/diehard/Downloads/EthPriceOracle/oracle/contracts/CallerContractInterface.sol",
     "exportedSymbols": {
       "CallerContractInterface": [
         105
@@ -154,127 +154,149 @@
     "src": "0:133:1"
   },
   "legacyAST": {
-    "absolutePath": "/C/Users/diehard/Downloads/EthPriceOracle/oracle/contracts/CallerContractInterface.sol",
-    "exportedSymbols": {
-      "CallerContractInterface": [
-        105
-      ]
+    "attributes": {
+      "absolutePath": "/mnt/c/Users/diehard/Downloads/EthPriceOracle/oracle/contracts/CallerContractInterface.sol",
+      "exportedSymbols": {
+        "CallerContractInterface": [
+          105
+        ]
+      }
     },
-    "id": 106,
-    "nodeType": "SourceUnit",
-    "nodes": [
+    "children": [
       {
+        "attributes": {
+          "literals": [
+            "solidity",
+            ">=",
+            "0.4",
+            ".22",
+            "<",
+            "0.9",
+            ".0"
+          ]
+        },
         "id": 97,
-        "literals": [
-          "solidity",
-          ">=",
-          "0.4",
-          ".22",
-          "<",
-          "0.9",
-          ".0"
-        ],
-        "nodeType": "PragmaDirective",
+        "name": "PragmaDirective",
         "src": "0:32:1"
       },
       {
-        "baseContracts": [],
-        "contractDependencies": [],
-        "contractKind": "contract",
-        "documentation": null,
-        "fullyImplemented": false,
-        "id": 105,
-        "linearizedBaseContracts": [
-          105
-        ],
-        "name": "CallerContractInterface",
-        "nodeType": "ContractDefinition",
-        "nodes": [
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": false,
+          "linearizedBaseContracts": [
+            105
+          ],
+          "name": "CallerContractInterface",
+          "scope": 106
+        },
+        "children": [
           {
-            "body": null,
-            "documentation": null,
-            "id": 104,
-            "implemented": false,
-            "kind": "function",
-            "modifiers": [],
-            "name": "callback",
-            "nodeType": "FunctionDefinition",
-            "parameters": {
-              "id": 102,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 99,
-                  "name": "_ethPrice",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 104,
-                  "src": "90:17:1",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_uint256",
-                    "typeString": "uint256"
-                  },
-                  "typeName": {
-                    "id": 98,
-                    "name": "uint256",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "90:7:1",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_uint256",
-                      "typeString": "uint256"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                },
-                {
-                  "constant": false,
-                  "id": 101,
-                  "name": "id",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 104,
-                  "src": "109:10:1",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_uint256",
-                    "typeString": "uint256"
-                  },
-                  "typeName": {
-                    "id": 100,
-                    "name": "uint256",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "109:7:1",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_uint256",
-                      "typeString": "uint256"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
               ],
-              "src": "89:31:1"
+              "name": "callback",
+              "scope": 105,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
             },
-            "returnParameters": {
-              "id": 103,
-              "nodeType": "ParameterList",
-              "parameters": [],
-              "src": "127:0:1"
-            },
-            "scope": 105,
-            "src": "72:56:1",
-            "stateMutability": "nonpayable",
-            "superFunction": null,
-            "visibility": "public"
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_ethPrice",
+                      "scope": 104,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 98,
+                        "name": "ElementaryTypeName",
+                        "src": "90:7:1"
+                      }
+                    ],
+                    "id": 99,
+                    "name": "VariableDeclaration",
+                    "src": "90:17:1"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "id",
+                      "scope": 104,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 100,
+                        "name": "ElementaryTypeName",
+                        "src": "109:7:1"
+                      }
+                    ],
+                    "id": 101,
+                    "name": "VariableDeclaration",
+                    "src": "109:10:1"
+                  }
+                ],
+                "id": 102,
+                "name": "ParameterList",
+                "src": "89:31:1"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 103,
+                "name": "ParameterList",
+                "src": "127:0:1"
+              }
+            ],
+            "id": 104,
+            "name": "FunctionDefinition",
+            "src": "72:56:1"
           }
         ],
-        "scope": 106,
+        "id": 105,
+        "name": "ContractDefinition",
         "src": "34:97:1"
       }
     ],
+    "id": 106,
+    "name": "SourceUnit",
     "src": "0:133:1"
   },
   "compiler": {
@@ -282,8 +304,8 @@
     "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.3.2",
-  "updatedAt": "2020-12-20T22:37:32.313Z",
+  "schemaVersion": "3.3.3",
+  "updatedAt": "2020-12-21T11:47:15.275Z",
   "devdoc": {
     "methods": {}
   },
